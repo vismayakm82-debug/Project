@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Hosting & Domain Directory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>WebHost Directory</h1>
+    <p>Find the Best Web Hosting and Domain Services</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#hosting">Hosting</a>
+    <a href="#domains">Domains</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <h2>Find Your Perfect Web Hosting</h2>
+    <p>Explore hosting providers and discover domain services.</p>
+  </section>
+
+  <section id="hosting">
+    <h2>Popular Hosting Providers</h2>
+    <input type="text" id="search" placeholder="Search hosting providers..." onkeyup="searchHosting()">
+    <div class="container" id="hostingList">
+      <div class="card">
+        <h3>Hostinger</h3>
+        <p>Affordable web hosting services.</p>
+        <button onclick="showInfo('Hostinger')">View Details</button>
+      </div>
+      <div class="card">
+        <h3>Bluehost</h3>
+        <p>Reliable hosting for websites.</p>
+        <button onclick="showInfo('Bluehost')">View Details</button>
+      </div>
+      <div class="card">
+        <h3>GoDaddy</h3>
+        <p>Domain registration and hosting.</p>
+        <button onclick="showInfo('GoDaddy')">View Details</button>
+      </div>
+      <div class="card">
+        <h3>HostGator</h3>
+        <p>Web hosting solutions for businesses.</p>
+        <button onclick="showInfo('HostGator')">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="domains">
+    <h2>Domain Name Search</h2>
+    <p>Enter your desired domain name:</p>
+    <input type="text" id="domain" placeholder="Enter domain name">
+    <button onclick="checkDomain()">Search Domain</button>
+    <p id="result" aria-live="polite"></p>
+    <small>Demo search only. Check availability with a domain registrar.</small>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: webhostdirectory@example.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 WebHost Directory. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
